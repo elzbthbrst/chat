@@ -46,15 +46,17 @@ ws.onerror = (error) => {
 
 function getTemplateHtml(data) {
     const {name, message} = data
+    
     return `
         <tr>
             <td >${name}</td>
-            td>${message}</td>
+            <td>${message}</td>
         </tr>
         `
 }
 
 function getMessage() {
+
     return {
         name: form.name.value,
         message: form.message.value,
